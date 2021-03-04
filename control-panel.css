@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wr {
+  padding: 30px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  border-right: 1px solid rgb(212, 212, 212);
+}
+
+.left .top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.left .top div {
+  padding: 10px 0;
+}
+
+.left .top span {
+  display: inline-block;
+  width: 130px;
+}
+
+.left .top button {
+  padding: 5px;
+  width: 50px;
+  font-size: 1.2rem;
+}
+
+.left .bottom {
+  padding-top: 20px;
+  height: calc(100% - 133px);
+  overflow: auto;
+}
+.left .bottom ol {
+  padding-left: 25px;
+}
+.left .bottom .audio-wrapper {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+.left .bottom audio {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.left .bottom audio:focus {
+  outline: none;
+}
+
+.left .bottom span {
+  padding-right: 10px;
+  display: inline-block;
+  width: 240px;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+}
+
+.right p {
+  margin: 0;
+}
+
+.right li>div {
+  cursor: pointer;
+  padding: 15px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.right img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.right .back-to-score-btn {
+  margin-left: 2em;
+  padding: 5px;
+  font-size: 1.2rem;
+}

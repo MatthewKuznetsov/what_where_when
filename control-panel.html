@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="control-panel.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wr">
+    <div class="left">
+      <div class="top">
+        <div>
+          <span>Знатоки</span>
+          <span id="experts-score"></span>
+          <button onclick="incrementExperts()">+</button>
+          <button onclick="decrementExperts()">-</button>
+        </div>
+        <div>
+          <span>Телезрители</span>
+          <span id="tv-score"></span>
+          <button onclick="incrementTv()">+</button>
+          <button onclick="decrementTv()">-</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <ol>
+
+        <li class="audio-wrapper">
+          <span>Внимание! Правильный ответ</span>
+          <audio controls>
+            <source src="sounds/внимание правильный ответ.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Волчёк </span>
+          <audio controls>
+            <source src="sounds/волчок.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Гонг </span>
+          <audio controls>
+            <source src="sounds/гонг.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Начало </span>
+          <audio controls>
+            <source src="sounds/начало.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Окончание игры </span>
+          <audio controls>
+            <source src="sounds/окончание игры.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Окончание обсуждения </span>
+          <audio controls>
+            <source src="sounds/окончание обсуждения.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Сигнал начала обсуждения </span>
+          <audio controls>
+            <source src="sounds/сигнал начала обсуждения.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Черный ящик</span>
+          <audio controls>
+            <source src="sounds/черный ящик.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Пауза 1</span>
+          <audio controls>
+            <source src="sounds/pause1.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Пауза 2</span>
+          <audio controls>
+            <source src="sounds/pause2.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Пауза 3</span>
+          <audio controls>
+            <source src="sounds/pause3.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+        <li class="audio-wrapper">
+          <span>Пауза 4</span>
+          <audio controls>
+            <source src="sounds/pause4.mp3">
+            Тег audio не поддерживается вашим браузером.
+            <a href="audio/music.mp3">Скачайте музыку</a>.
+          </audio>
+        </li>
+
+      </ol>
+
+
+      </div>
+    </div>
+    <div class="right">
+
+      <button class="back-to-score-btn" onclick="backToScore()">Вернуться к счёту</button>
+
+      <ol>
+        <li>
+          <div onclick="setImage(1)">
+            <img src="images/1.jpg" alt="">
+            <p>Патапов Кузьма из Пездогорска</p>
+          </div>
+        </li>
+        <li>
+          <div onclick="setImage(2)">
+            <img src="images/2.jpg" alt="">
+            <p>Ерофей Коричневый из Нижних Чехлов</p>
+          </div>
+          </li>
+        <li>
+          <div onclick="setImage(3)">
+            <img src="images/3.jpg" alt="">
+            <p>Таисья Ча-Ча-Ча из посёлка Русский Акташ</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <script src="js/state.js"></script>
+  <script src="js/control-panel.js"></script>
+</body>
+
+</html>
