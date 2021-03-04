@@ -73,24 +73,35 @@ body {
   overflow: auto;
 }
 
-.right p {
+.right .top p {
   margin: 0;
 }
 
-.right li>div {
+.right .top li>div {
   cursor: pointer;
   padding: 15px 0;
   display: flex;
   align-items: flex-end;
 }
+.right .top li>div:hover {
+  background-color: #0000000e;
+}
 
-.right img {
+.right .top img {
   width: 100px;
   margin-right: 10px;
 }
 
-.right .back-to-score-btn {
+.right .top .back-to-score-btn {
   margin-left: 2em;
   padding: 5px;
   font-size: 1.2rem;
+}
+
+.right .bottom {
+  padding: 2rem;
+}
+
+.right .bottom #now-displays {
+  font-size: 2rem;
 }

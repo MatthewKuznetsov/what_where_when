@@ -13,4 +13,5 @@ function checkScore() {
   }
 }
 
+checkScore();
 setInterval(checkScore, CHECK_INTERVAL);
